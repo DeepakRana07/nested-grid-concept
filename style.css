@@ -1,0 +1,114 @@
+.container{
+    background-color: white;
+    width:70% ;
+    height: 70%;
+    display: grid;
+    margin:5% auto;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows:50px 1fr 1fr 1fr;
+    grid-gap:20px;
+    /* justify-content: space-around; */
+    grid-template-areas: 
+    "hd hd"
+    " pg1 pg2"
+    "pg3 pg4"
+    "pg5 pg6";
+
+}
+#header{
+    grid-area: hd;
+}
+#pg1{
+    grid-area: pg1;
+    border:1px solid grey
+}
+
+#pg2{
+    grid-area:pg2;
+    border:1px solid grey
+}
+
+#pg3{
+    grid-area:pg3;
+    border:1px solid grey
+}
+
+#pg4{
+ grid-area: pg4;
+ border:1px solid grey
+
+}
+#pg5{
+  grid-area: pg5;
+  border:1px solid grey
+}
+
+#pg6{
+  grid-area: pg6;
+  border:1px solid grey;
+}
+
+.content{
+    /* background-color: aqua; */
+    border-radius: 5px;
+    
+
+}
+.content:hover{
+    filter:drop-shadow(0 0 20px#333); 
+    transform: scale(1.02);
+    /* border: 5px solid #333; */
+}
+
+.pageheading{
+    text-align: center;
+    bottom: 10px;
+    /* position: absolute; */
+}
+
+
+.childgrid{
+    display: grid;
+    background-color:rgb(222, 238, 244);
+    height: 100%;
+    width: 100%;
+    grid-template-columns: repeat(3,1fr);
+}
+.subs{
+    /* place-content: center; */
+    position: relative;
+    top:10px;
+    left:20px;
+}
+h3{
+    display: inline-block; 
+    margin:2rem 0 0 1.5rem ;
+
+
+}
+h6{
+    margin:0.5rem 0 0 1.5rem;
+}
+p{
+    margin:0.8rem 0 0.5rem 1.5rem;
+}
+.linkd{
+    display: block;
+
+    margin:2rem 0 1.5rem 1.5rem;
+
+}
+img{
+    height:2rem;
+    display: inline-block;
+    position: relative;
+    left:160px;
+    top:8px;
+    /* display: inline; */
+    /* margin:10px 0 0 150px; */
+    /* display: block; */
+    /* align-items: center; */
+    /* position: absolute;
+    top:90px;
+    right:260px; */
+}
